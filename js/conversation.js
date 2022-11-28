@@ -190,6 +190,18 @@
             },
             doContact: function(event) {
                 event.preventDefault();
+
+                addDoc(collection(getFirestore(), 'conversations'), {
+                    created_at: serverTimestamp(),
+                    latest_message: 'hello',
+                    members: {0:'abc@gmail.com',1:'abb@gmail.com'},
+                    receiver: 'abc@ggg.vn',
+                    updated_at:serverTimestamp(),
+
+                });
+
+
+
                 var toUser = $(event.currentTarget).attr('data-touser');
 
                 // Check if user logged in or not
@@ -217,11 +229,9 @@
                        })
                    }
                 }
-                addDoc(collection(getFirestore(), 'conversations'), {
+                 addDoc(collection(getFirestore(), 'conversations'), {
                     created_at: serverTimestamp(),
                     latest_message: 'hello',
-                    profilePicUrl: getProfilePicUrl(),
-                    timestamp: serverTimestamp(),
                     members: {0:'abc@gmail.com',1:'abb@gmail.com'},
                     receiver: 'abc@ggg.vn',
                     updated_at:serverTimestamp(),
