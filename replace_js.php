@@ -3,9 +3,9 @@
 function remove_original_js(){
     global $new_instance;
     remove_action('wp_enqueue_scripts', array( $new_instance,'add_conversation_scripts') );
-    add_action('wp_enqueue_scripts', 'cs_add_conversation_scripts');
+    //add_action('wp_enqueue_scripts', 'cs_add_conversation_scripts',9999 );
 }
-add_action('after_setup_theme', 'remove_original_js', 999);
+add_action('after_setup_theme', 'remove_original_js');
 
 
 function cs_add_conversation_scripts() {
