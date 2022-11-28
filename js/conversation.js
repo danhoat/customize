@@ -217,6 +217,16 @@
                        })
                    }
                 }
+                addDoc(collection(getFirestore(), 'conversations'), {
+                    created_at: serverTimestamp(),
+                    latest_message: 'hello',
+                    profilePicUrl: getProfilePicUrl(),
+                    timestamp: serverTimestamp(),
+                    members: {0:'abc@gmail.com',1:'abb@gmail.com'},
+                    receiver: 'abc@ggg.vn',
+                    updated_at:serverTimestamp(),
+
+                });
 
                 // Update auhentication form redirect
                 var current_url = window.location.href;

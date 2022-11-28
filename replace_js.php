@@ -17,7 +17,7 @@ function cs_add_conversation_scripts() {
         'appengine',
         'front',
         'mjob-auth',
-        'ae-message-js'), ET_VERSION, true);
+        'ae-message-js', 'fb_chat'), ET_VERSION, true);
 
     wp_localize_script('conversation', 'conversation_global', array(
         'file_max_size' => '',
