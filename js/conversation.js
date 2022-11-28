@@ -99,7 +99,7 @@
 
             },
             initialize: function() {
-                alert('child theme ok');
+            
                 AE.Views.Modal_Box.prototype.initialize.call();
                 if(typeof this.model === 'undefined') {
                     this.model = new Models.Message();
