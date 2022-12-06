@@ -60,7 +60,17 @@ if (!function_exists('mje_show_user_header')) {
                     </div>
 
                     <ul class="list-message-box-body">
-                        <?php mje_get_user_dropdown_conversation();?>
+                        <li class="clearfix conversation-item">
+                            <div class="inner unread">
+                                <a href="https://tzenter.com/ae_message/conversation-by-tzenter-team-4/" class="link"></a>
+                                <div class="img-avatar">
+                                    <a href="https://tzenter.com/author/tzenteradmin/" target="_blank" title="Tzenter Team"><img src="https://tzenter.com/wp-content/uploads/2021/12/cropped-tzenter-symbol-white-with-circle-shadow-512-x-512-px-150x150.png" class="avatar" alt=""></a>        </div>
+                                <div class="conversation-text">
+                                    <span class="latest-reply"> dsg</span>
+                                    <span class="latest-reply-time">1 min ago</span>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
 
                     <div class="list-message-box-footer">
