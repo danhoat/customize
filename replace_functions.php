@@ -48,14 +48,14 @@ if (!function_exists('mje_show_user_header')) {
                 <div class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
                     <span class="link-message">
 
-				<span class="alert-sign">5</span>
+				<span class="alert-sign">0</span>
 
                         <i class="fa fa-comment"></i>
                     </span>
                 </div>
                 <div class="list-message-box dropdown-menu" aria-labelledby="dLabel">
                     <div class="list-message-box-header">
-                        <span> <span class="unread-message-count">5</span> New </span>
+                        <span> <span class="unread-message-count">0</span> New </span>
                         <a href="#" class="mark-as-read"><?php _e('Mark all as read', 'enginethemes');?></a>
                     </div>
 
