@@ -59,7 +59,7 @@ if (!function_exists('mje_show_user_header')) {
                         <a href="#" class="mark-as-read"><?php _e('Mark all as read', 'enginethemes');?></a>
                     </div>
 
-                    <ul class="list-message-box-body">
+                    <ul class="list-message-box-body" id = "list-message-box-body">
                         <li class="clearfix conversation-item">
                             <div class="inner unread">
                                 <a href="https://tzenter.com/ae_message/conversation-by-tzenter-team-4/" class="link"></a>
