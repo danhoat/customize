@@ -1,0 +1,53 @@
+/*
+
+Theme Name: MicrojobEngine Child
+
+Theme URL: http://www.enginethemes.com/themes/microjobengine
+
+Description: MicrojobEngine Child
+
+Theme Author: Abubakar Wazih Tushar
+
+Author URL: https://www.freelancer.com/u/zabubakar
+
+Template: microjobengine
+
+Text Domain: enginethemes-child
+
+Version: 1.1
+
+*/
+
+.audio-progess{
+	display: inline;
+}
+.audio-text a{
+	display: inline;
+}
+.mjob-edit-content .aud-remove-extra-item{
+	position: relative;
+    top: 1px;
+    font-size: 13px;
+    left: 9px;
+    border: 50%;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 1px 5px;
+}
+.mjob-single-page .mjob-single-gallery .carousel-control.right,
+.mjob-single-page .mjob-single-gallery .carousel-control.left{
+    bottom: 35px;
+}
+.mjob-single-page .mjob-single-gallery.mjob-single-gallery-video.has_aud_gal .carousel:hover .carousel-control{
+    background-color: transparent !important;
+}
+@media only screen and (max-width: 600px) {
+    .hap-player-thumb-wrapper{
+        width: 50px;
+        height: 50px;
+    }
+    .hap-player-thumb{
+        width: 30px;
+        height: 30px;
+    }
+}
