@@ -59,18 +59,8 @@ if (!function_exists('mje_show_user_header')) {
                         <a href="#" class="mark-as-read"><?php _e('Mark all as read', 'enginethemes');?></a>
                     </div>
 
-                    <ul class="list-message-box-body">
-                        <li class="clearfix conversation-item">
-                            <div class="inner unread">
-                                <a href="https://tzenter.com/ae_message/conversation-by-tzenter-team-4/" class="link"></a>
-                                <div class="img-avatar">
-                                    <a href="https://tzenter.com/author/tzenteradmin/" target="_blank" title="Tzenter Team"><img src="https://tzenter.com/wp-content/uploads/2021/12/cropped-tzenter-symbol-white-with-circle-shadow-512-x-512-px-150x150.png" class="avatar" alt=""></a>        </div>
-                                <div class="conversation-text">
-                                    <span class="latest-reply"> dsg</span>
-                                    <span class="latest-reply-time">1 min ago</span>
-                                </div>
-                            </div>
-                        </li>
+                    <ul class="list-message-box-body" id="list-message-box-body">
+
                     </ul>
 
                     <div class="list-message-box-footer">
