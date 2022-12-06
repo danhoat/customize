@@ -1,11 +1,23 @@
 <?php
 
-
-function get_inbox_page_link(){
+function get_inbox_page_id(){
     global $wp, $wpdb;
     $sql = $wpdb->prepare("SELECT ID FROM  $wpdb->posts WHERE post_content LIKE %s AND post_type = %s AND post_status =%s", '%[fb_chats]%', 'page','publish');
     $page_id = $wpdb->get_var($sql);
+    return $page_id;
+}
+function is_inbox_page(){
+    if( is_singular('page') ){
+        global $post;
+        if($post->ID == get_inbox_page_id() ){
+            return 1;
+        }
+    }
+    return 0;
+}
+function get_inbox_page_link(){
 
+    $page_id = get_inbox_page_id();
     return get_permalink($page_id);
 }
 
