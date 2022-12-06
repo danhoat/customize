@@ -1,5 +1,15 @@
 <?php
 
+
+function get_inbox_page_link(){
+    global $wp, $wpdb;
+    $sql = $wpdb->prepare("SELECT ID FROM  $wpdb->posts WHERE post_content LIKE %s AND post_type = %s AND post_status =%s", '%[fb_chats]%', 'page','publish');
+    $page_id = $wpdb->get_var($sql);
+
+    return get_permalink($page_id);
+}
+
+
 function cs_mje_show_contact_link($to_user){
 	$user = get_userdata($to_user);
 	?>
@@ -37,28 +47,20 @@ if (!function_exists('mje_show_user_header')) {
             <div class="message-icon list-message dropdown et-dropdown">
                 <div class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
                     <span class="link-message">
-                         <?php
-if ($conversation_unread > 0) {
-				echo '<span class="alert-sign">' . $conversation_unread . '</span>';
-			}
-			?>
+
+				<span class="alert-sign">5</span>
+
                         <i class="fa fa-comment"></i>
                     </span>
                 </div>
                 <div class="list-message-box dropdown-menu" aria-labelledby="dLabel">
                     <div class="list-message-box-header">
-                        <span>
-                            <?php
-printf(__('<span class="unread-message-count">%s</span> New', 'enginethemes'), $conversation_unread);
-			?>
-                        </span>
+                        <span> <span class="unread-message-count">5</span> New </span>
                         <a href="#" class="mark-as-read"><?php _e('Mark all as read', 'enginethemes');?></a>
                     </div>
 
                     <ul class="list-message-box-body">
-                        <?php
-mje_get_user_dropdown_conversation();
-			?>
+                        <?php mje_get_user_dropdown_conversation();?>
                     </ul>
 
                     <div class="list-message-box-footer">
