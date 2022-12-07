@@ -1,11 +1,23 @@
 <?php
 
-
-function get_inbox_page_link(){
+function get_inbox_page_id(){
     global $wp, $wpdb;
     $sql = $wpdb->prepare("SELECT ID FROM  $wpdb->posts WHERE post_content LIKE %s AND post_type = %s AND post_status =%s", '%[fb_chats]%', 'page','publish');
     $page_id = $wpdb->get_var($sql);
+    return $page_id;
+}
+function is_inbox_page(){
+    if( is_singular('page') ){
+        global $post;
+        if($post->ID == get_inbox_page_id() ){
+            return 1;
+        }
+    }
+    return 0;
+}
+function get_inbox_page_link(){
 
+    $page_id = get_inbox_page_id();
     return get_permalink($page_id);
 }
 
@@ -59,6 +71,7 @@ if (!function_exists('mje_show_user_header')) {
                         <a href="#" class="mark-as-read"><?php _e('Mark all as read', 'enginethemes');?></a>
                     </div>
 
+<<<<<<< HEAD
                     <ul class="list-message-box-body" id = "list-message-box-body">
                         <li class="clearfix conversation-item">
                             <div class="inner unread">
@@ -71,6 +84,10 @@ if (!function_exists('mje_show_user_header')) {
                                 </div>
                             </div>
                         </li>
+=======
+                    <ul class="list-message-box-body" id="list-message-box-body">
+
+>>>>>>> a18e5cde29c1bd64efd07eac020a558c8aedd3b2
                     </ul>
 
                     <div class="list-message-box-footer">

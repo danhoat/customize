@@ -1,0 +1,243 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: MicrojobEngine Child\n"
+"POT-Creation-Date: 2020-12-06 04:04+0600\n"
+"PO-Revision-Date: 2020-12-06 04:02+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets/css\n"
+"X-Poedit-SearchPathExcluded-1: assets/img\n"
+"X-Poedit-SearchPathExcluded-2: assets/fonts\n"
+
+#: assets/js/script.js:208
+msgid "Invalid action"
+msgstr ""
+
+#: assets/js/script.js:219
+msgid "Upload"
+msgstr ""
+
+#: assets/js/script.js:221
+msgid "Link"
+msgstr ""
+
+#: assets/js/script.js:224
+msgid "Select audio clip"
+msgstr ""
+
+#: assets/js/script.js:227
+msgid "Enter Audio link"
+msgstr ""
+
+#: assets/js/script.js:228 assets/js/script.js:309
+msgid "Add"
+msgstr ""
+
+#: assets/js/script.js:281
+msgid "Loading..."
+msgstr ""
+
+#: assets/js/script.js:304
+msgid "Invalid or unsupported audio link"
+msgstr ""
+
+#: assets/js/script.js:314 assets/js/script.js:445
+msgid "You can add maximum 3 audio clip"
+msgstr ""
+
+#: assets/js/script.js:354
+msgid "Only mp3, wav, acc files are allowed"
+msgstr ""
+
+#: assets/js/script.js:368
+msgid "You can upload maximum 20 MB audio file"
+msgstr ""
+
+#: assets/js/script.js:430
+msgid "Failed to upload audio clip"
+msgstr ""
+
+#: assets/js/script.js:440
+msgid "Your browser doesn't support to File API"
+msgstr ""
+
+#: page-process-payment.php:61
+msgid "Order Received"
+msgstr ""
+
+#: page-process-payment.php:63
+msgid "Thank you. Your order has been received and is now being processed!"
+msgstr ""
+
+#: page-process-payment.php:69
+msgid "Invoice no"
+msgstr ""
+
+#: page-process-payment.php:73
+msgid "Date"
+msgstr ""
+
+#: page-process-payment.php:77
+msgid "Payment type"
+msgstr ""
+
+#: page-process-payment.php:86
+msgid "Total"
+msgstr ""
+
+#: page-process-payment.php:98
+msgid "CASH NOTE"
+msgstr ""
+
+#: page-process-payment.php:105
+msgid "Visit your mJob"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:3
+msgid "Edit your job"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:11 template/post-service-step3.php:28
+msgid "Job name"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:27 template-js/template-edit-mjob.php:32
+#: template/post-service-step3.php:42 template/post-service-step3.php:46
+#, php-format
+msgid "Price (%s)"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:33 template/post-service-step3.php:47
+#, php-format
+msgid "%s - %s"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:43 template/post-service-step3.php:55
+msgid "Time of delivery (Day)"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:49 template/post-service-step3.php:61
+msgid "Category"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:51 template/post-service-step3.php:63
+msgid "Choose categories"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:63 template/post-service-step3.php:77
+msgid "Description"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:69 template/post-service-step3.php:114
+msgid "Audio"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:149 template/post-service-step3.php:171
+msgid "Add audio clip"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:154 template/post-service-step3.php:84
+msgid "Gallery"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:177 template/post-service-step3.php:176
+msgid "Video"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:178 template/post-service-step3.php:177
+msgid "Add link from Youtube, Vimeo or .MP4 "
+msgstr ""
+
+#: template-js/template-edit-mjob.php:182 template/post-service-step3.php:182
+msgid "Extra services"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:186 template/post-service-step3.php:186
+msgid "Add extra"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:190 template/post-service-step3.php:191
+msgid "Tags"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:195 template/post-service-step3.php:192
+msgid "Enter microjob tags"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:199
+msgid " Skills (max is 5)"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:214
+msgid "Opening Message"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:225 template/post-service-step3.php:196
+msgid "Opening message"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:227 template/post-service-step3.php:198
+msgid ""
+"Opening message is automatically displayed as your first message in the "
+"order detail page."
+msgstr ""
+
+#: template-js/template-edit-mjob.php:232 template/post-service-step3.php:204
+msgid "SAVE"
+msgstr ""
+
+#: template-js/template-edit-mjob.php:233 template/post-service-step3.php:205
+msgid "DISCARD"
+msgstr ""
+
+#: template/mjob-post/audio.php:26 template/mjob-post/audio.php:41
+#: template/mjob-post/audio.php:56
+msgid "Audio Clip"
+msgstr ""
+
+#: template/mjob-post/audio.php:202
+msgid "NOTHING FOUND!"
+msgstr ""
+
+#: template/mjob-post/audio.php:223
+msgid "Previous"
+msgstr ""
+
+#: template/mjob-post/audio.php:227
+msgid "Next"
+msgstr ""
+
+#: template/post-service-step3.php:90
+msgid " Up to 5 pictures whose each minimum size is 768 x 435px"
+msgstr ""
+
+#: template/post-service-step3.php:91
+msgid "Select one picture for your featured image"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+#. Description of the plugin/theme
+msgid "MicrojobEngine Child"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Abubakar Wazih Tushar"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Process Payment"
+msgstr ""
