@@ -70,37 +70,15 @@ if (!function_exists('mje_show_user_header')) {
                         <span> <span class="unread-message-count">0</span> New </span>
                         <a href="#" class="mark-as-read"><?php _e('Mark all as read', 'enginethemes');?></a>
                     </div>
-
-<<<<<<< HEAD
-                    <ul class="list-message-box-body" id = "list-message-box-body">
-                        <li class="clearfix conversation-item">
-                            <div class="inner unread">
-                                <a href="https://tzenter.com/ae_message/conversation-by-tzenter-team-4/" class="link"></a>
-                                <div class="img-avatar">
-                                    <a href="https://tzenter.com/author/tzenteradmin/" target="_blank" title="Tzenter Team"><img src="https://tzenter.com/wp-content/uploads/2021/12/cropped-tzenter-symbol-white-with-circle-shadow-512-x-512-px-150x150.png" class="avatar" alt=""></a>        </div>
-                                <div class="conversation-text">
-                                    <span class="latest-reply"> dsg</span>
-                                    <span class="latest-reply-time">1 min ago</span>
-                                </div>
-                            </div>
-                        </li>
-=======
-                    <ul class="list-message-box-body" id="list-message-box-body">
-
->>>>>>> a18e5cde29c1bd64efd07eac020a558c8aedd3b2
-                    </ul>
+                    <ul class="list-message-box-body" id="list-message-box-body"> </ul>
 
                     <div class="list-message-box-footer">
                         <a href="<?php echo get_inbox_page_link(); ?>"><?php _e('View all', 'enginethemes');?></a>
                     </div>
                 </div>
             </div>
-
-            <!--<div class="list-notification">
-                <span class="link-notification"><i class="fa fa-bell"></i></span>
-            </div>-->
             <?php
-$absolute_url = mje_get_full_url($_SERVER);
+            $absolute_url = mje_get_full_url($_SERVER);
 			if ( is_mje_submit_page() ) {
 				$post_link = '#';
 			} else {
