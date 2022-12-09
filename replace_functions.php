@@ -100,20 +100,20 @@ if ( !function_exists('mje_show_user_header') && defined('FB_CHAT')) {
                             <a href="<?php echo $inbox_info->inbox_url; ?>"><?php _e('Message', 'enginethemes');?></a>
                         </li>
 						<?php
-/**
-			 * Add new item menu before Sign out
-			 *
-			 * @since 1.3.1
-			 * @author Tan Hoai
-			 */
-			do_action('mje_after_user_dropdown_menu');
-			?>
+                            /**
+                			 * Add new item menu before Sign out
+                			 *
+                			 * @since 1.3.1
+                			 * @author Tan Hoai
+                			 */
+                			do_action('mje_after_user_dropdown_menu');
+                			?>
                         <li><a href="<?php echo wp_logout_url(home_url()); ?>"><?php _e('Sign out', 'enginethemes');?> </a></li>
                     </ul>
                     <div class="overlay-user"></div>
                 </div>
             </div>
             <?php
-}
+        }
 	}
 }
