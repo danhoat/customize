@@ -1,27 +1,5 @@
 <?php
 
-function get_inbox_page_id(){
-    global $wp, $wpdb;
-    $sql = $wpdb->prepare("SELECT ID FROM  $wpdb->posts WHERE post_content LIKE %s AND post_type = %s AND post_status =%s", '%[fb_chats]%', 'page','publish');
-    $page_id = $wpdb->get_var($sql);
-    return $page_id;
-}
-function is_inbox_page(){
-    if( is_singular('page') ){
-        global $post;
-        if($post->ID == get_inbox_page_id() ){
-            return 1;
-        }
-    }
-    return 0;
-}
-function get_inbox_page_link(){
-
-    $page_id = get_inbox_page_id();
-    return get_permalink($page_id);
-}
-
-
 function cs_mje_show_contact_link($to_user){
 	$user = get_userdata($to_user);
 	?>
@@ -31,9 +9,7 @@ function cs_mje_show_contact_link($to_user){
 
 }
 
-
-
-if (!function_exists('mje_show_user_header')) {
+if ( !function_exists('mje_show_user_header') && defined('FB_CHAT')) {
 	/**
 	 * Show user section on main navigation
 	 * @param void
@@ -46,6 +22,7 @@ if (!function_exists('mje_show_user_header')) {
 	function mje_show_user_header() {
 		global $current_user;
 		$conversation_unread = mje_get_unread_conversation_count();
+        $inbox_info = get_inbox_page();
 		// Check empty current user
 		if (!empty($current_user->ID)) {
 			?>
@@ -56,7 +33,7 @@ if (!function_exists('mje_show_user_header')) {
                 </span>
             </div>
 
-            <div class="message-icon list-message dropdown et-dropdown">
+            <div class="message-iconNew list-message dropdown et-dropdown">
                 <div class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
                     <span class="link-message">
 
@@ -76,7 +53,7 @@ if (!function_exists('mje_show_user_header')) {
                     </ul>
 
                     <div class="list-message-box-footer">
-                        <a href="<?php echo get_inbox_page_link(); ?>"><?php _e('View all', 'enginethemes');?></a>
+                        <a href="<?php echo $inbox_info->inbox_url; ?>"><?php _e('View all', 'enginethemes');?></a>
                     </div>
                 </div>
             </div>
@@ -85,7 +62,7 @@ if (!function_exists('mje_show_user_header')) {
                 <span class="link-notification"><i class="fa fa-bell"></i></span>
             </div>-->
             <?php
-$absolute_url = mje_get_full_url($_SERVER);
+            $absolute_url = mje_get_full_url($_SERVER);
 			if ( is_mje_submit_page() ) {
 				$post_link = '#';
 			} else {
@@ -109,14 +86,14 @@ $absolute_url = mje_get_full_url($_SERVER);
                     <ul class="dropdown-menu et-dropdown-login" aria-labelledby="dLabel">
                         <li><a href="<?php echo et_get_page_link('dashboard'); ?>"><?php _e('Dashboard', 'enginethemes');?></a></li>
                         <?php
-/**
-			 * Add new item menu after Dashboard
-			 *
-			 * @since 1.3.1
-			 * @author Tan Hoai
-			 */
-			do_action('mje_before_user_dropdown_menu');
-			?>
+                        /**
+            			 * Add new item menu after Dashboard
+            			 *
+            			 * @since 1.3.1
+            			 * @author Tan Hoai
+            			 */
+            			do_action('mje_before_user_dropdown_menu');
+            			?>
 						<li><a href="<?php echo et_get_page_link("profile"); ?>"><?php _e('My profile', 'enginethemes');?></a></li>
                         <li><a href="<?php echo et_get_page_link("my-list-order"); ?>"><?php _e('My orders', 'enginethemes');?></a></li>
                         <li><a href="<?php echo et_get_page_link("my-listing-jobs"); ?>"><?php _e('My jobs', 'enginethemes');?></a></li>
@@ -125,7 +102,7 @@ $absolute_url = mje_get_full_url($_SERVER);
                                 <div class="plus-circle"><i class="fa fa-plus"></i></div>
                         </a></li>
                         <li class="get-message-link">
-                            <a href="<?php echo get_inbox_page_link(); ?>"><?php _e('Message', 'enginethemes');?></a>
+                            <a href="<?php echo $inbox_info->inbox_url; ?>"><?php _e('Message', 'enginethemes');?></a>
                         </li>
 						<?php
 /**

@@ -2,6 +2,7 @@
 // Remove powered by Microjob Themes in the footer page
 
 require_once("custom_mail.php");
+
 function custom_copyright($copyright){
 	$copyright = get_theme_mod('site_copyright');
 	return $copyright;
