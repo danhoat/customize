@@ -48,9 +48,7 @@ if ( !function_exists('mje_show_user_header') && defined('FB_CHAT')) {
                         <a href="#" class="mark-as-read"><?php _e('Mark all as read', 'enginethemes');?></a>
                     </div>
 
-                    <ul class="list-message-box-body" id="list-message-box-body">
-
-                    </ul>
+                    <ul class="list-message-box-body" id="list-message-box-body"></ul>
 
                     <div class="list-message-box-footer">
                         <a href="<?php echo $inbox_info->inbox_url; ?>"><?php _e('View all', 'enginethemes');?></a>
