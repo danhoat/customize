@@ -50,15 +50,12 @@ if ( !function_exists('mje_show_user_header') && defined('FB_CHAT')) {
 
                     <ul class="list-message-box-body" id="list-message-box-body"></ul>
 
+
                     <div class="list-message-box-footer">
                         <a href="<?php echo $inbox_info->inbox_url; ?>"><?php _e('View all', 'enginethemes');?></a>
                     </div>
                 </div>
             </div>
-
-            <!--<div class="list-notification">
-                <span class="link-notification"><i class="fa fa-bell"></i></span>
-            </div>-->
             <?php
             $absolute_url = mje_get_full_url($_SERVER);
 			if ( is_mje_submit_page() ) {
